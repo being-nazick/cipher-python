@@ -92,8 +92,8 @@ def openNewWindow1():
     lblKey1.grid(row=3, column=1)
 
     # Button for encrypt
-    btnEncrypt = Button(newWindow, padx=10, pady=8, bd=12, fg="black", font=('arial', 16, 'bold'), width=8, text="Encrypt",
-                        bg="powder blue",command=EncryptedMsg).grid(row=4,column=1)
+    Button(newWindow, padx=10, pady=8, bd=12, fg="black", font=('arial', 16, 'bold'), width=8, text="Encrypt",
+           bg="powder blue", command=EncryptedMsg).grid(row=4, column=1)
 
     # label for Decryption
     lblEncryption = Label(newWindow, font=('arial', 20, 'bold'), text="DECRYPTION", fg='blue', bd=16, anchor='w',
@@ -116,10 +116,13 @@ def openNewWindow1():
     lblKey1.grid(row=7, column=1)
 
     # Button for decrypt
-    btnDecrypt = Button(newWindow, padx=10, pady=8, bd=12, fg="black", font=('arial', 16, 'bold'), width=8,
-                        text="Decrypt",
-                        bg="powder blue", command=DecryptedMsg).grid(row=8, column=1)
+    Button(newWindow, padx=10, pady=8, bd=12, fg="black", font=('arial', 16, 'bold'), width=8,
+           text="Decrypt",
+           bg="powder blue", command=DecryptedMsg).grid(row=8, column=1)
 
+    Button(newWindow, padx=10, pady=8, bd=12, fg="black", font=('arial', 16, 'bold'), width=8,
+           text="Decrypt",
+           bg="powder blue", command=DecryptedMsg).grid(row=5, column=1)
 #..........................................CAESAR CIPHER END................................................
 #..........................................ONE TIME PAD ALGORITHM OR VERNAM CIPHER.......................
 def openNewWindow2():
@@ -236,9 +239,9 @@ def openNewWindow2():
     lblKey1.grid(row=3, column=1)
 
     # Button for encrypt
-    btnEncrypt = Button(newWindow, padx=10, pady=8, bd=12, fg="black", font=('arial', 16, 'bold'), width=8,
-                        text="Encrypt",
-                        bg="powder blue", command=EncryptedMsg).grid(row=4, column=1)
+    Button(newWindow, padx=10, pady=8, bd=12, fg="black", font=('arial', 16, 'bold'), width=8,
+           text="Encrypt",
+           bg="powder blue", command=EncryptedMsg).grid(row=4, column=1)
 
     # label for Decryption
     lblEncryption = Label(newWindow, font=('arial', 20, 'bold'), text="DECRYPTION", fg='blue', bd=16, anchor='w',
@@ -261,10 +264,13 @@ def openNewWindow2():
     lblKey1.grid(row=7, column=1)
 
     # Button for decrypt
-    btnDecrypt = Button(newWindow, padx=10, pady=8, bd=12, fg="black", font=('arial', 16, 'bold'), width=8,
-                        text="Decrypt",
-                        bg="powder blue", command=DecryptedMsg).grid(row=8, column=1)
+    Button(newWindow, padx=10, pady=8, bd=12, fg="black", font=('arial', 16, 'bold'), width=8,
+           text="Decrypt",
+           bg="powder blue", command=DecryptedMsg).grid(row=8, column=1)
 
+    Button(newWindow, padx=10, pady=8, bd=12, fg="black", font=('arial', 16, 'bold'), width=8,
+           text="Decrypt",
+           bg="powder blue", command=DecryptedMsg).grid(row=5, column=1)
 #..................................ONE TIME PAD END................................................................
 
 #.................................POLY ALPHABETIC CIPHER OR VIGENERE CIPHER.....................
@@ -356,9 +362,9 @@ def openNewWindow3():
     lblKey1.grid(row=3, column=1)
 
     # Button for encrypt
-    btnEncrypt = Button(newWindow, padx=10, pady=8, bd=12, fg="black", font=('arial', 16, 'bold'), width=8,
-                        text="Encrypt",
-                        bg="powder blue", command=EncryptedMsg).grid(row=4, column=1)
+    Button(newWindow, padx=10, pady=8, bd=12, fg="black", font=('arial', 16, 'bold'), width=8,
+           text="Encrypt",
+           bg="powder blue", command=EncryptedMsg).grid(row=4, column=1)
 
     # label for Decryption
     lblEncryption = Label(newWindow, font=('arial', 20, 'bold'), text="DECRYPTION", fg='blue', bd=16, anchor='w',
@@ -381,10 +387,13 @@ def openNewWindow3():
     lblKey1.grid(row=7, column=1)
 
     # Button for decrypt
-    btnDecrypt = Button(newWindow, padx=10, pady=8, bd=12, fg="black", font=('arial', 16, 'bold'), width=8,
-                        text="Decrypt",
-                        bg="powder blue", command=DecryptedMsg).grid(row=8, column=1)
-
+    Button(newWindow, padx=10, pady=8, bd=12, fg="black", font=('arial', 16, 'bold'), width=8,
+           text="Decrypt",
+           bg="powder blue", command=DecryptedMsg).grid(row=8, column=1)
+           
+    Button(newWindow, padx=10, pady=8, bd=12, fg="black", font=('arial', 16, 'bold'), width=8,
+           text="Decrypt",
+           bg="powder blue", command=DecryptedMsg).grid(row=5, column=1)
 
 root = Tk()
 root.geometry('1600x800+0+0')
@@ -397,8 +406,11 @@ Tops.pack(side=TOP)
 lblInfo = Label(Tops,font=('arial',40,'bold'),text = "SUBSTITUITION TECHNIQUES IN CRYPTOGRAPHY",fg = "black",bd=10,anchor='w')
 lblInfo.grid(row=0,column=0)
 
-Caesar = Button(Tops,padx=25,pady=8,bd=12,fg="brown",font=('arial',16, 'bold'),width=8,text="Caesar Cipher",bg="yellow",command=openNewWindow1).grid(row=1,column=0)
-OneTimePad = Button(Tops,padx=25,pady=8,bd=12,fg="brown",font=('arial',16, 'bold'),width=8,text="One Time Pad",bg="yellow",command=openNewWindow2).grid(row=2,column=0)
-PolyAlphabetic = Button(Tops,padx=25,pady=8,bd=12,fg="brown",font=('arial',16, 'bold'),width=8,text="Poly Alphabetic",bg="yellow",command=openNewWindow3).grid(row=3,column=0)
+Caesar = Button(Tops, padx=25, pady=8, bd=12, fg="brown", font=('arial', 16, 'bold'), width=8, text="Caesar Cipher", bg="yellow", command=openNewWindow1)
+Caesar.grid(row=1, column=0)
+OneTimePad = Button(Tops, padx=25, pady=8, bd=12, fg="brown", font=('arial', 16, 'bold'), width=8, text="One Time Pad", bg="yellow", command=openNewWindow2)
+OneTimePad.grid(row=2, column=0)
+PolyAlphabetic = Button(Tops, padx=25, pady=8, bd=12, fg="brown", font=('arial', 16, 'bold'), width=8, text="Poly Alphabetic", bg="yellow", command=openNewWindow3)
+PolyAlphabetic.grid(row=3, column=0)
 
 root.mainloop()
